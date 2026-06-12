@@ -35,7 +35,7 @@ const syncParallax = () => {
 
   parallaxItems.forEach((item) => {
     const speed = Number(item.dataset.parallax || 0);
-    item.style.transform = `translate3d(0, ${scrollY * speed}px, 0) scale(1.08)`;
+    item.style.transform = `translate3d(var(--parallax-x, 0px), ${scrollY * speed}px, 0) scale(var(--parallax-scale, 1.08))`;
   });
 };
 
