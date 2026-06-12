@@ -1447,12 +1447,20 @@ h2 {
 /* Mission, accreditation belt, booking and brighter teal refinements */
 .hero::after {
   background:
-    linear-gradient(90deg, rgba(2, 38, 43, 0.94), rgba(4, 86, 94, 0.78) 46%, rgba(13, 147, 154, 0.42)),
-    radial-gradient(circle at 78% 48%, rgba(134, 226, 224, 0.44), transparent 28%);
+    linear-gradient(90deg, rgba(2, 38, 43, 0.96), rgba(4, 86, 94, 0.78) 48%, rgba(13, 147, 154, 0.2)),
+    linear-gradient(180deg, rgba(2, 38, 43, 0.04), rgba(2, 38, 43, 0.54));
 }
 
 .graphic-slab {
   background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(134,226,224,0.1));
+}
+
+.hero-media img {
+  object-position: center center;
+}
+
+.hero-graphic {
+  display: none;
 }
 
 .mission-band {
