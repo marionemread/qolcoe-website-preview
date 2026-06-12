@@ -1460,7 +1460,10 @@ h2 {
 }
 
 .hero .hero-media img {
-  object-position: 78% center;
+  --parallax-x: 14%;
+  --parallax-scale: 1.22;
+  object-position: 86% center;
+  transform-origin: center center;
 }
 
 .hero::after {
