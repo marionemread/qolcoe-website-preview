@@ -1810,3 +1810,223 @@ h2 {
     padding-top: 118px;
   }
 }
+
+/* Final presentation pass: calmer headings and cleaner booking cards */
+.section-heading,
+.section-heading.compact,
+.booking-page-head,
+.team-section .section-heading,
+.insights-section .section-heading {
+  display: block;
+  width: min(1120px, 100%);
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: clamp(26px, 4vw, 44px);
+  text-align: left;
+}
+
+.section-heading .eyebrow,
+.section-heading.compact .eyebrow,
+.mission-inner .eyebrow,
+.booking-page-head .eyebrow,
+.section-kicker {
+  margin: 0 0 14px;
+}
+
+.eyebrow.emblem-eyebrow,
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--teal-700);
+}
+
+.section-kicker {
+  width: min(1120px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.section-kicker img,
+.emblem-eyebrow img {
+  flex: 0 0 auto;
+}
+
+.section-heading h2,
+.section-heading.compact h2,
+.team-section .section-heading h2,
+.standards-section .section-heading.compact h2,
+.booking-page-head h2,
+.mission-inner h2,
+.page-cta h2 {
+  max-width: 980px;
+  font-size: clamp(34px, 3.4vw, 50px);
+  line-height: 1.14;
+  text-wrap: balance;
+}
+
+.section-heading p,
+.section-heading.compact p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 16px 0 0;
+  font-size: clamp(17px, 1.35vw, 19px);
+  line-height: 1.72;
+}
+
+.mission-inner {
+  display: block;
+  width: min(1120px, 100%);
+  max-width: 1120px;
+}
+
+.mission-inner p:last-child {
+  max-width: 790px;
+  margin-top: 18px;
+  font-size: clamp(18px, 1.35vw, 20px);
+}
+
+.split-layout h2,
+.consultancy-copy h2 {
+  max-width: 860px;
+  font-size: clamp(34px, 3.2vw, 48px);
+  line-height: 1.16;
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  font-size: clamp(42px, 5.4vw, 76px);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.booking-section {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(48,189,193,0.12), transparent 36%),
+    linear-gradient(180deg, #ffffff 0%, #eefaf9 100%);
+}
+
+.booking-card-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.booking-course-card {
+  min-height: 100%;
+  padding: 22px;
+  display: grid;
+  align-content: start;
+  border-color: rgba(10,64,72,0.12);
+  box-shadow: 0 18px 46px rgba(4,47,51,0.09);
+}
+
+.booking-course-card .booking-preview__top {
+  display: grid;
+  align-items: start;
+  justify-content: stretch;
+  gap: 8px;
+  min-height: 84px;
+}
+
+.booking-course-card .booking-preview__top strong {
+  font-size: clamp(21px, 1.9vw, 27px);
+  line-height: 1.12;
+}
+
+.booking-card-grid .booking-date {
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.booking-card-grid .booking-date > span {
+  min-height: 62px;
+  padding: 8px;
+  text-align: center;
+}
+
+.booking-card-grid .booking-date strong {
+  display: block;
+  line-height: 1.25;
+}
+
+.booking-card-grid .booking-date a {
+  grid-column: 2;
+  justify-self: start;
+  min-height: 38px;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: var(--navy);
+  background: var(--gold);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.group-booking-card {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.18);
+  background:
+    linear-gradient(135deg, rgba(3,55,61,0.96), rgba(13,147,154,0.92)),
+    var(--teal-900);
+}
+
+.group-booking-card .booking-preview__top {
+  border-bottom-color: rgba(255,255,255,0.18);
+}
+
+.group-booking-card .booking-preview__top span,
+.group-booking-card .booking-preview__top strong,
+.group-booking-card .booking-date strong {
+  color: var(--white);
+}
+
+.group-booking-card .booking-date {
+  border-bottom-color: rgba(255,255,255,0.16);
+}
+
+.group-booking-card .booking-date > span {
+  color: var(--navy);
+  background: linear-gradient(135deg, #ffe39a, var(--gold));
+}
+
+.group-booking-card .booking-date p {
+  color: rgba(255,255,255,0.76);
+}
+
+@media (max-width: 1040px) {
+  .booking-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .section-heading h2,
+  .section-heading.compact h2,
+  .team-section .section-heading h2,
+  .standards-section .section-heading.compact h2,
+  .booking-page-head h2,
+  .mission-inner h2,
+  .page-cta h2 {
+    font-size: clamp(31px, 8vw, 40px);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(38px, 10vw, 54px);
+  }
+
+  .booking-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card-grid .booking-date {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+}
