@@ -2319,3 +2319,44 @@ h2 {
     padding-top: 124px;
   }
 }
+
+/* Hero emblem placement refinement */
+.hero .hero-media img,
+.page-hero .hero-media img {
+  --parallax-x: 32%;
+  --parallax-scale: 1.1;
+  object-position: 100% center;
+  transform-origin: right center;
+  opacity: 0.68;
+}
+
+.hero::after,
+.page-hero::after {
+  background:
+    linear-gradient(90deg, rgba(2, 38, 43, 0.99) 0%, rgba(2, 45, 51, 0.98) 42%, rgba(4, 86, 94, 0.78) 66%, rgba(13, 147, 154, 0.2) 100%),
+    linear-gradient(180deg, rgba(2, 38, 43, 0.08), rgba(2, 38, 43, 0.58));
+}
+
+.hero-copy,
+.page-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 980px) {
+  .hero .hero-media img,
+  .page-hero .hero-media img {
+    --parallax-x: 42%;
+    --parallax-scale: 1.18;
+    opacity: 0.44;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .hero-media img,
+  .page-hero .hero-media img {
+    --parallax-x: 55%;
+    --parallax-scale: 1.28;
+    opacity: 0.28;
+  }
+}
