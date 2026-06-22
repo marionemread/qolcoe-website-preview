@@ -2323,11 +2323,11 @@ h2 {
 /* Hero emblem placement refinement */
 .hero .hero-media img,
 .page-hero .hero-media img {
-  --parallax-x: 32%;
-  --parallax-scale: 1.1;
-  object-position: 100% center;
+  --parallax-x: 30%;
+  --parallax-scale: 0.9;
+  object-position: 100% 68%;
   transform-origin: right center;
-  opacity: 0.68;
+  opacity: 0.62;
 }
 
 .hero::after,
@@ -2346,8 +2346,9 @@ h2 {
 @media (max-width: 980px) {
   .hero .hero-media img,
   .page-hero .hero-media img {
-    --parallax-x: 42%;
-    --parallax-scale: 1.18;
+    --parallax-x: 38%;
+    --parallax-scale: 1;
+    object-position: 100% 72%;
     opacity: 0.44;
   }
 }
@@ -2355,8 +2356,9 @@ h2 {
 @media (max-width: 640px) {
   .hero .hero-media img,
   .page-hero .hero-media img {
-    --parallax-x: 55%;
-    --parallax-scale: 1.28;
+    --parallax-x: 50%;
+    --parallax-scale: 1.08;
+    object-position: 100% 74%;
     opacity: 0.28;
   }
 }
