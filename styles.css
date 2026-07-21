@@ -2281,6 +2281,11 @@ h2 {
   gap: 6px;
 }
 
+.powered-by a {
+  display: inline-flex;
+  align-items: center;
+}
+
 .powered-by span {
   color: rgba(255,255,255,0.58);
   font-size: 11px;
