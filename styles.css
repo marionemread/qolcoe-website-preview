@@ -2367,3 +2367,104 @@ h2 {
     opacity: 0.28;
   }
 }
+
+/* QOLCOE brand teal refresh */
+:root {
+  --teal-950: #012f35;
+  --teal-900: #044a52;
+  --teal-800: #086a73;
+  --teal-700: #0b929d;
+  --teal-500: #25c1c7;
+  --teal-300: #8ee9e7;
+  --aqua-100: #e1fbfa;
+  --paper: #f4fbfb;
+  --shadow: 0 24px 70px rgba(3, 71, 79, 0.16);
+}
+
+.site-header {
+  background: linear-gradient(90deg, rgba(1, 47, 53, 0.84), rgba(11, 146, 157, 0.66));
+  box-shadow: 0 18px 50px rgba(1, 47, 53, 0.18);
+}
+
+.site-header.is-scrolled {
+  background: rgba(1, 47, 53, 0.9);
+}
+
+.site-nav {
+  background: transparent;
+}
+
+.hero-media {
+  background:
+    radial-gradient(circle at 76% 20%, rgba(142, 233, 231, 0.26), transparent 28%),
+    linear-gradient(135deg, #012f35 0%, #086a73 44%, #25c1c7 100%);
+}
+
+.hero .hero-media img,
+.page-hero .hero-media img {
+  filter: saturate(1.18) hue-rotate(5deg) brightness(1.08);
+}
+
+.hero::after,
+.page-hero::after {
+  background:
+    linear-gradient(90deg, rgba(1, 47, 53, 0.94) 0%, rgba(2, 70, 78, 0.86) 38%, rgba(11, 146, 157, 0.52) 66%, rgba(37, 193, 199, 0.12) 100%),
+    radial-gradient(circle at 82% 34%, rgba(142, 233, 231, 0.32), transparent 32%),
+    linear-gradient(180deg, rgba(1, 47, 53, 0.04), rgba(1, 47, 53, 0.44));
+}
+
+.course-hero::after {
+  background:
+    linear-gradient(90deg, rgba(1, 47, 53, 0.94), rgba(2, 80, 89, 0.72) 52%, rgba(37, 193, 199, 0.16)),
+    linear-gradient(180deg, rgba(1, 47, 53, 0.04), rgba(1, 47, 53, 0.58));
+}
+
+.standards-section,
+.consultation-journey,
+.contact-section,
+.accreditation-belt,
+.site-footer {
+  background:
+    radial-gradient(circle at 82% 10%, rgba(142, 233, 231, 0.24), transparent 30%),
+    linear-gradient(135deg, #012f35 0%, #086a73 55%, #25c1c7 130%);
+}
+
+.feature-band,
+.mission-section,
+.service-gateway-section,
+.course-detail-section,
+.page-cta,
+.booking-section {
+  background:
+    radial-gradient(circle at 86% 0%, rgba(37, 193, 199, 0.14), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #eafafa 100%);
+}
+
+.course-points span,
+.booking-features span {
+  background: rgba(37, 193, 199, 0.14);
+}
+
+.service-gateway-card,
+.course-tile,
+.elearning-card,
+.team-card,
+.insight-card,
+.booking-preview {
+  box-shadow: 0 18px 48px rgba(3, 71, 79, 0.09);
+}
+
+.emblem-eyebrow img,
+.course-tile::before {
+  background-color: #012f35;
+}
+
+.nav-dropdown {
+  background: rgba(1, 47, 53, 0.96);
+}
+
+@media (max-width: 980px) {
+  .site-nav {
+    background: rgba(1, 47, 53, 0.98);
+  }
+}
